@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title> MY BIAS PICK</title>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	<script>
+	// 미리 로딩해둘 이미지 배열
+	var files = ["img/1.jpg",
+	             "img/2.jpg",
+	             "img/3.jpg",
+	             "img/4.jpg"];
+	var imgs = new Array();
+	for(var i=0; i<files.length; i++) {
+		imgs[i] = new Image(); // 이미지 객체 생성
+		imgs[i].src = files[i]; // 이미지 미리 로딩
+	}
 
+	// 다음 이미지 출력
+	var next = 1;
+	function change(img) {
+		img.src = imgs[next].src; // 이미지 변경
+		next++; // 다음 이미지 인덱스
+		next %= imgs.length; // 개수를 넘으면 처음으로
+	}
+	</script>
 </head>
 <body>
 	<h3>이미지 Contest 사이트입니다</h3>
@@ -15,6 +34,27 @@
 	<a href="menu3.html"> menu3 </a><br>
 	<br>
 	<br>
+
+
+	<script type="text/javascript">
+	document.getElementById("selected").style.display = "none";
+	</script>
+	<img id="selected" src="a.gif" />
+
+이미지 4개를 업로드하고 두개씩 hidden 을 푸는 방식으로 진행<br>
+<br>
+처음엔 이미지가 두 개가 보이고 하나를 선택하면<br>
+<br>
+다음 두 개가 보이며<br>
+
+선택한 기록을 남겨야 되니까
+
+지금 n강이었으면 다음 강으로 옮길 수 있도록 n/2 강으로 가도록 변수 조정
+
+<br>
+<br>
+<br>
+<br>
 
 </body>
 </html>
