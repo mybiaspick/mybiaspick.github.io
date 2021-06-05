@@ -83,3 +83,7 @@ decoration : 밑줄
 none : 없는 상태
 underline : 있는 상태
 a:active : 링크부분에서 마우스를 누르고 있는 동안의 상태*/
+
+.zoom{
+	zoom:100%
+}
