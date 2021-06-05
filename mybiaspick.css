@@ -1,0 +1,85 @@
+body{
+	width: 1600px ;
+	height: 2000px;
+
+}
+.img-box{
+	width: 1600px;
+	margin-top :100px;
+}
+
+
+.left-image-box{
+	width: 700px;
+	height: 700px;
+	line-height: 700px;
+	margin: 0 auto;
+	text-align: center;
+	border:10px ridge wheat;
+	float:left; 
+	box-sizing: border-box;
+	margin-right:40px;
+	margin-left:30px;
+
+}
+.left-image-box img{
+	vertical-align: middle;
+}
+.left-text-box {
+	width: 700px;
+	height: 200px;
+	line-height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	float:left; 
+	box-sizing: border-box;
+	margin-right:40px;
+	margin-top:30px;
+	margin-left:30px;
+
+	border:10px ridge wheat;
+	clear :both;
+}
+
+
+
+.right-image-box{
+	width: 700px;
+	height: 700px;
+	line-height: 700px;
+	margin: 0 auto;
+	margin-left: ;
+	text-align: center;
+	border:10px ridge wheat;
+	float:left; 
+	box-sizing: border-box;
+}
+.right-image-box img{
+	vertical-align: middle;
+}
+.right-text-box {
+	width: 700px;
+	height: 200px;
+	line-height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	float:left; 
+	box-sizing: border-box;
+	margin-top:30px;
+	margin-right:40px;
+	border:10px ridge wheat;
+}
+
+ a:link { color: red; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ a:hover { color: blue; text-decoration: underline;}
+
+/* - 해 석 -
+style 소스의 type = text를 제어하는 css로 한다.
+a:link : 클릭하지 않은 링크
+a:visited : 한번 클릭했던 혹은 다녀갔던 링크
+a:hover : 링크를 클릭하려고 마우스를 가져갔을 때
+decoration : 밑줄
+none : 없는 상태
+underline : 있는 상태
+a:active : 링크부분에서 마우스를 누르고 있는 동안의 상태*/

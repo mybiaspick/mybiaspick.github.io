@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title> MY BIAS PICK</title>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	<link rel="stylesheet" type="text/css" href="mybiaspick.css">
 	<script>
-	// 미리 로딩해둘 이미지 이름 배열
-	var files = ["img/1.jpg",
-	             "img/2.jpg",
-	             "img/3.jpg"];
+	// 미리 로딩해 둘 이미지 이름 배열
+	var files = ["img/Blackpink/Rose/R01.jpg",
+	             "img/Blackpink/Rose/R02.jpg",
+	             "img/Blackpink/Rose/R03.jpg",
+	             "img/Blackpink/Rose/R04.jpg",
+	             "img/blackpink/Rose/R05.jpg",
+	             "img/blackpink/Rose/R06.jpg",
+	             "img/blackpink/Rose/R07.jpg",
+	             "img/blackpink/Rose/R08.jpg",
+	             "img/blackpink/Rose/R09.jpg",
+	             "img/blackpink/Rose/R10.jpeg",
+	             "img/blackpink/Rose/R11.jpg",
+	             "img/blackpink/Rose/R12.jpg",
+	             "img/blackpink/Rose/R13.jpg",
+	             "img/blackpink/Rose/R14.jpg"];
 	var imgs = new Array();
 	for(var i=0; i<files.length; i++) {
 		imgs[i] = new Image(); // 이미지 객체 생성
@@ -27,19 +39,26 @@
 	<h3>이미지 Contest 사이트입니다</h3>
 
 	<br> 
-	<a href="index.html"> index </a><br> 
-	<a href="menu1.html"> menu1 </a><br> 
-	<a href="menu2.html"> menu2 </a><br>
-	<a href="menu3.html"> menu3 </a><br>
+	<a href="index.html"> index</a><br>
+	<a href="menu1.html"> menu1</a> : 이미지 순차 display <br> 
+	<a href="menu2.html"> menu2</a> : 이미지 클릭 시 이미지 원본 크기 출력<br> 
+	<a href="menu3.html"> menu3</a> : 마우스 호버 시 이미지가 원본 크기로 확대<br><br>
+	<!-- 
+	<a href="menu4.html"> menu4</a> <br>
+	<a href="menu5.html"> menu5</a> <br>
+	<a href="menu6.html"> menu6</a> <br>
+	<a href="menu7.html"> menu7</a> <br>
+	<a href="menu8.html"> menu8</a> <br>
+	<a href="menu9.html"> menu9</a> <br>
+	 -->
 	<br>
 	<br>
-
 	<!-- new Image()로 이미지 로딩 -->
-	<!-- <hr> -->
-	이미지를 클릭하면 다음 이미지를 보여줍니다.
+	<hr>
+	이미지를 클릭하면 다음 이미지를 보여줍니다.<br>
 	<img style="border:20px ridge wheat"
 		src="media/Penguins.png" alt="."
-		width="200" height="200"
+		width="400" 
 		onclick="change(this)">
 </body>
 </html>

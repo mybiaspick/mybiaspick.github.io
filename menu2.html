@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title> MY BIAS PICK</title>
-	<script>
-	// 미리 로딩해둘 이미지 배열
-	var files = ["img/1.jpg",
-	             "img/2.jpg",
-	             "img/3.jpg",
-	             "img/4.jpg"];
-	var imgs = new Array();
-	for(var i=0; i<files.length; i++) {
-		imgs[i] = new Image(); // 이미지 객체 생성
-		imgs[i].src = files[i]; // 이미지 미리 로딩
-	}
-
-	// 다음 이미지 출력
-	var next = 1;
-	function change(img) {
-		img.src = imgs[next].src; // 이미지 변경
-		next++; // 다음 이미지 인덱스
-		next %= imgs.length; // 개수를 넘으면 처음으로
-	}
-	</script>
+  <meta charset="UTF-8">
+  <title> MY BIAS PICK</title>
+  <link rel="stylesheet" type="text/css" href="mybiaspick.css">
 </head>
 <body>
-	<h3>이미지 Contest 사이트입니다</h3>
+  <h3>이미지 Contest 사이트입니다</h3>
 
-	<br> 
-	<a href="index.html"> index </a><br> 
-	<a href="menu1.html"> menu1 </a><br> 
-	<a href="menu2.html"> menu2 </a><br>
-	<a href="menu3.html"> menu3 </a><br>
-	<br>
-	<br>
+  <br> 
+  <a href="index.html"> index</a><br>
+  <a href="menu1.html"> menu1</a> : 이미지 순차 display <br> 
+  <a href="menu2.html"> menu2</a> : 이미지 클릭 시 이미지 원본 크기 출력<br> 
+  <a href="menu3.html"> menu3</a> : 마우스 호버 시 이미지가 원본 크기로 확대<br><br>
+  <!-- 
+  <a href="menu4.html"> menu4</a> <br>
+  <a href="menu5.html"> menu5</a> <br>
+  <a href="menu6.html"> menu6</a> <br>
+  <a href="menu7.html"> menu7</a> <br>
+  <a href="menu8.html"> menu8</a> <br>
+  <a href="menu9.html"> menu9</a> <br>
+   -->
+  <br>
+  <br>
+
+  <div class="img-box">
+      <div class="left-image-box">
+        <img
+          class="images"
+          src="./img/blackpink/rose/r01.jpg"
+          width="400px"
+          onclick="window.open('R01.html', '_blank');">
+      </div>
+      <div class="right-image-box">
+        <img
+          class="images"
+          src="./img/blackpink/rose/R02.jpg"
+          width="400px"
+          onclick="window.open('R02.html', '_blank');">
+    </div>
+  </div>
+  <div class="left-text-box">
+    여기에 버튼 생성 예정
+  </div>
+
+  <div class="right-text-box">
+    여기에 버튼 생성 예정
+  </div>
 
 
-	<script type="text/javascript">
-	document.getElementById("selected").style.display = "none";
-	</script>
-	<img id="selected" src="a.gif" />
-
-이미지 4개를 업로드하고 두개씩 hidden 을 푸는 방식으로 진행<br>
-<br>
-처음엔 이미지가 두 개가 보이고 하나를 선택하면<br>
-<br>
-다음 두 개가 보이며<br>
-
-선택한 기록을 남겨야 되니까
-
-지금 n강이었으면 다음 강으로 옮길 수 있도록 n/2 강으로 가도록 변수 조정
-
-<br>
-<br>
-<br>
-<br>
+<script>
+function openImage() {
+    var largeImage = document.getElementById('viewImage');
+    largeImage.style.display = 'block';
+    largeImage.style.width = 500 + "px";
+    largeImage.style.height = 500 + "px";
+    var w = window.open("");
+    w.document.write(largeImage.outerHTML);
+}
+</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	<script>
+
+	</script>
+</head>
+<body>
+	<h3>이미지 Contest 사이트입니다</h3>
+
+	<br> 
+	<a href="index.html"> index </a><br> 
+	<a href="menu1.html"> menu1 </a><br> 
+	<a href="menu2.html"> menu2 </a><br>
+	<a href="menu3.html"> menu3 </a><br>
+	<a href="menu4.html"> menu4 </a><br>
+	<a href="menu5.html"> menu5 </a><br>
+	<a href="menu6.html"> menu6 </a><br>
+	<a href="menu7.html"> menu7 </a><br>
+	<a href="menu8.html"> menu8 </a><br>
+	<a href="menu9.html"> menu9 </a><br>
+	<br>
+
+			<!-- onclick="change(this)" -->
+	<!-- 
+	<img 	style="border:20px ridge wheat" 
+			src="img/blackpink/rose/R01.jpg" alt="."
+			width="200" height="200"
+			onclick="img_click(event)"			>
+
+	<img 	style="border:20px ridge wheat" 
+			src="img/blackpink/rose/R02.jpg" alt="."
+			width="200" height="200"
+			onclick="img_click(event)">
+ -->
+
+<!--event.target.style.width = document.getElementById("image").width;
+    event.target.style.height = document.getElementById("image").height;
+    event.target.style.transition = "all 0.5s";
+ -->
+
+  <div class="container">
+    <img
+      class="img-city"
+      src="./img/1.jpg"
+      width="300px"
+      height="300px"
+      onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"
+    />
+    <img
+      class="img-city"
+      src="./img/2.jpg"
+      width="300px"
+      height="300px"
+      onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"
+    />
+    <img
+      class="img-city"
+      src="./img/3.jpg"
+      width="300px"
+      height="300px"
+      onmouseenter="zoomIn(event)"
+      onmouseleave="zoomOut(event)"
+    />
+  </div>
+  <script>
+    function zoomIn(event) {
+    	var w = document.getElementById("image").width;
+    	var h = document.getElementById("image").height;
+    	document.write(w+"<br/>");
+    	document.write(h+"<br/>");
+     	event.target.style.width = w;
+      	event.target.style.height = h;
+    	event.target.style.transition = "all 0.5s";
+    }
+
+    function zoomOut(event) {
+      event.target.style.width = "300px";
+      event.target.style.height = "300px";
+      event.target.style.transition = "all 0.5s";
+    }
+  </script>
+
+</body>
+</html>
