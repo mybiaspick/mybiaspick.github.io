@@ -1,85 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title> MY BIAS PICK</title>
-  <link rel="stylesheet" type="text/css" href="mybiaspick.css">
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	<link rel="stylesheet" type="text/css" href="mybiaspick.css">
+	<link rel="stylesheet" type="text/css" href="pick-button.css">
+	<script type="text/javascript" src="image-controller.js"></script> 
 </head>
-<body class="zoom">
-  <h3>이미지 Contest 사이트입니다</h3>
+<body>
+	<h3>이미지 Contest 사이트입니다</h3>
 
   <br> 
   <a href="index.html"> index</a><br>
   <a href="menu1.html"> menu1</a> : 이미지 갤러리 <br> 
-  <a href="menu2.html"> menu2</a> : 이미지 상세보기 <br> 
-  <a href="menu3.html"> menu3</a> : 마우스 호버 <br><br>
-  <!-- 
-  <a href="menu4.html"> menu4</a> <br>
-  <a href="menu5.html"> menu5</a> <br>
-  <a href="menu6.html"> menu6</a> <br>
-  <a href="menu7.html"> menu7</a> <br>
-  <a href="menu8.html"> menu8</a> <br>
-  <a href="menu9.html"> menu9</a> <br>
-   -->
-  <br>
+  <a href="menu2.html"> menu2</a> : 이미지 컨테스트 <br> 
   <br>
 
-  <div class="img-box">
-      <div class="left-image-box">
-        <img
-          class="images"
-          src="./img/Blackpink/Rose/R01.jpg"
-          width="400px"
-          style="cursor: pointer"
-          onclick="doImgPop('img/Blackpink/Rose/R01.jpg')">
-      </div>
-      <div class="right-image-box">
-        <img
-          class="images"
-          src="./img/Blackpink/Rose/R02.jpg"
-          width="400px"
-          style="cursor: pointer"
-          onclick="doImgPop('img/Blackpink/Rose/R02.jpg')">
-    </div>
-  </div>
-  <div class="left-text-box">
-    여기에 버튼 생성 예정
-  </div>
+	<!-- 라운드 1 -->
+	<!-- 라운드 1 -->
+	<!-- 라운드 1 -->
 
-  <div class="right-text-box">
-    여기에 버튼 생성 예정
-  </div>
+  <!-- image 박스 둘 + text 박스 둘 -->
+  <div id="contest-block-1">
 
-<!-- 이미지 상세보기 코드 -->
-<script>
-  function doImgPop(img){ 
-   img1= new Image(); 
-   img1.src=(img); 
-   imgControll(img); 
-  } 
-    
-  function imgControll(img){ 
-   if((img1.width!=0)&&(img1.height!=0)){ 
-      viewImage(img); 
-    } 
-    else{ 
-       controller="imgControll('"+img+"')"; 
-       intervalID=setTimeout(controller,20); 
-    } 
-  }
-  function viewImage(img){ 
-   W=img1.width; 
-   H=img1.height; 
-   O="width="+W+",height="+H+",scrollbars=yes"; 
-   imgWin=window.open("","",O); 
-   imgWin.document.write("<html><head><title>이미지 상세보기</title></head>");
-   imgWin.document.write("<body topmargin=0 leftmargin=0>");
-   imgWin.document.write("<img src="+img+" onclick='self.close()' style='cursor:pointer;' title ='클릭하시면 창이 닫힙니다.'>");
-   imgWin.document.close();
-  }
-</script>
+  	<!-- 이미지들을 포함하는 이미지 박스 -->
+		<div class="img-box">
+			<!-- 왼쪽 이미지 박스 -->
+		    <div class="left-image-box">
+		    	<img
+	      	class="images"
+	      	src="./img/Blackpink/Rose/R01.jpg"
+		    	width="300px"
+	      	onmouseenter="zoomIn(event)"
+	      	onmouseleave="zoomOut(event)"
+	      	onclick="doImgPop('img/Blackpink/Rose/R01.jpg')"
+	      	/>
+		    </div>
+		    <!-- 오른쪽 이미지 박스 -->
+		    <div class="right-image-box">
+		    	<img
+		    	class="images"
+		    	src="./img/Blackpink/Rose/R02.jpg"
+		    	width="300px"
+					onmouseenter="zoomIn(event)"
+		  		onmouseleave="zoomOut(event)"
+					onclick="doImgPop('img/Blackpink/Rose/R02.jpg')"
+		  		/>
+			</div>
+		</div> <!-- 이미지 박스 division 종료 -->
+		
+		<div class="left-text-box"><br>
+			<button class="pick-button" 
+				onclick="turnThisOff()"
+				onclick="turnNextOn()">
+				pick
+			</button>
+		</div>
+		<div class="right-text-box"><br>
+			<button class="pick-button" 
+				onclick="turnThisOff()"
+				onclick="turnNextOn()">
+				pick
+			</button>
+		</div>
+	</div> 
+	<!-- contest 박스 종료 -->
 
 
+
+	<!-- 라운드 2 -->
+	<!-- 라운드 2 -->
+	<!-- 라운드 2 -->
+
+  <!-- image 박스 둘 + text 박스 둘 -->
+  <div id="contest-block-2" style="display: none;">
+
+  	<!-- 이미지 두개를 포함하는 이미지 박스 -->
+		<div class="img-box">
+			<!-- 왼쪽 이미지 박스 -->
+		    <div class="left-image-box">
+		    	<img
+	      	class="images"
+	      	src="./img/Blackpink/Rose/R03.jpg"
+		    	width="300px"
+	      	onmouseenter="zoomIn(event)"
+	      	onmouseleave="zoomOut(event)"
+	      	onclick="doImgPop('img/Blackpink/Rose/R03.jpg')"
+	      	/>
+		    </div>
+		    <!-- 오른쪽 이미지 박스 -->
+		    <div class="right-image-box">
+		    	<img
+		    	class="images"
+		    	src="./img/Blackpink/Rose/R04.jpg"
+		    	width="300px"
+					onmouseenter="zoomIn(event)"
+		  		onmouseleave="zoomOut(event)"
+					onclick="doImgPop('img/Blackpink/Rose/R04.jpg')"
+		  		/>
+			</div>
+		</div> <!-- 이미지 박스 division 종료 -->
+		
+		<div class="left-text-box"><br>
+			<button class="pick-button" 
+				onclick="turnThisOff2()"
+				onclick="turnNextOn2()">
+				pick
+			</button>
+		</div>
+		<div class="right-text-box"><br>
+			<button class="pick-button" 
+				onclick="turnThisOff2()"
+				onclick="turnNextOn2()">
+				pick
+			</button>
+		</div>
+	</div> <!-- contest 박스 종료 -->
+
+
+
+
+  <script>
+  	// 보기 숨김 전환
+     function turnThisOff() {
+       var x = document.getElementById("contest-block-1");
+         x.style.display = "none";
+       var z = document.getElementById("contest-block-2");
+         z.style.display = "";
+     	}
+
+     function turnNextOn() {
+       var y = document.getElementById("contest-block-2");
+         y.style.display = "none";
+     	}
+  </script>
+
+
+
+
+
+  <script>
+  	// 보기 숨김 전환
+     function turnThisOff2() {
+       var x = document.getElementById("contest-block-2");
+         x.style.display = "none";
+     	}
+
+     function turnNextOn2() {
+       var y = document.getElementById("contest-block-2");
+         y.style.display = "none";
+     	}
+  </script>
+
+<!-- 
+  <script>
+     function myFunction() {
+       var x = document.getElementById("contest-block-1st");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
+     }
+  </script>
+ -->
 
 </body>
 </html>
