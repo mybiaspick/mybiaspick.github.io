@@ -4,8 +4,7 @@ body{
 
 }
 .img-box{
-	width: 1600px;
-	margin-top :100px;
+	margin-top :10px;
 }
 
 .left-image-box{
@@ -18,8 +17,7 @@ body{
 	float:left; 
 	box-sizing: border-box;
 	margin-right:40px;
-	margin-left:30px;
-
+	background-color: wheat;
 }
 .left-image-box img{
 	vertical-align: middle;
@@ -33,7 +31,6 @@ body{
 	box-sizing: border-box;
 	margin-right:40px;
 	margin-top:30px;
-	margin-left:30px;
 
 	border:10px ridge wheat;
 	clear :both;
@@ -51,6 +48,8 @@ body{
 	border:10px ridge wheat;
 	float:left; 
 	box-sizing: border-box;
+	background-color: wheat;
+	
 }
 .right-image-box img{
 	vertical-align: middle;

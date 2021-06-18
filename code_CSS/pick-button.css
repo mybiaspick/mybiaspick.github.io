@@ -49,7 +49,7 @@
 }
 .back-button:hover {
   background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
-  background-color:#ccc2a6;`
+  background-color:#ccc2a6;
 }
 .back-button:active {
   position:relative;
