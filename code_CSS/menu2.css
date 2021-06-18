@@ -6,7 +6,7 @@
 body{
 	margin:0 auto;
 	text-align: center;
-	width: 1250px ;
+	width: 1040px ;
 	height: 2000px;
 
 }
@@ -16,9 +16,9 @@ body{
 }
 
 .left-image-box{
-	width: 600px;
-	height: 700px;
-	line-height: 700px;
+	width: 500px;
+	height: 600px;
+	line-height: 600px;
 	margin: 0 auto;
 	text-align: center;
 	border:10px ridge wheat;
@@ -31,7 +31,7 @@ body{
 	vertical-align: middle;
 }
 .left-text-box {
-	width: 600px;
+	width: 500px;
 	height: 100px;
 	margin: 0 auto;
 	text-align: center;
@@ -45,9 +45,9 @@ body{
 }
 
 .right-image-box{
-	width: 600px;
-	height: 700px;
-	line-height: 700px;
+	width: 500px;
+	height: 600px;
+	line-height: 600px;
 	margin: 0 auto;
 	margin-left: ;
 	text-align: center;
@@ -61,7 +61,7 @@ body{
 	vertical-align: middle;
 }
 .right-text-box {
-	width: 600px;
+	width: 500px;
 	height: 100px;
 	margin: 0 auto;
 	text-align: center;

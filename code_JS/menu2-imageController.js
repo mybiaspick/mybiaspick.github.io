@@ -2,7 +2,7 @@
 
 	// Zoom In & Out JS
   function zoomIn(event) {
-    event.target.style.transform = "scale(1.5)";
+    event.target.style.transform = "scale(1.35)";
     event.target.style.zIndex = 1;
     event.target.style.transition = "all 0.5s";
   }
