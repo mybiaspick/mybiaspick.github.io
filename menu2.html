@@ -18,165 +18,240 @@
 	<p>
 		------------------------------------<br>
 		만들 내용<br>
-
 		- 인물 선택 (그룹별 - 인물별 - 그리드 방식)<br>
-		- 
 		- 뒤로 가기 버튼 구현<br>
-
-		만들 내용<br>
-
-
+		<br>
 	</p>
   <br>
 
 	<!-- 라운드 1 -->
-	<!-- 라운드 1 -->
-	<!-- 라운드 1 -->
-
   <!-- image 박스 둘 + text 박스 둘 -->
-  <div id="contest-block-1">
-
+  <div id="bundle1">
   	<!-- 이미지들을 포함하는 이미지 박스 -->
 		<div class="img-box">
 			<!-- 왼쪽 이미지 박스 -->
 		    <div class="left-image-box">
 		    	<img
 	      	class="images"
-	      	src="./img/Blackpink/Rose/R01.jpg"
+	      	src="./img/Blackpink/Rose/R00.jpg"
 		    	width="300px"
 	      	onmouseenter="zoomIn(event)"
 	      	onmouseleave="zoomOut(event)"
-	      	onclick="doImgPop('img/Blackpink/Rose/R01.jpg')"
+	      	onclick="doImgPop('img/Blackpink/Rose/R00.jpg')"
 	      	/>
 		    </div>
 		    <!-- 오른쪽 이미지 박스 -->
 		    <div class="right-image-box">
 		    	<img
 		    	class="images"
-		    	src="./img/Blackpink/Rose/R02.jpg"
+		    	src="./img/Blackpink/Rose/R01.jpg"
 		    	width="300px"
 					onmouseenter="zoomIn(event)"
 		  		onmouseleave="zoomOut(event)"
-					onclick="doImgPop('img/Blackpink/Rose/R02.jpg')"
+					onclick="doImgPop('img/Blackpink/Rose/R01.jpg')"
 		  		/>
 			</div>
 		</div> <!-- 이미지 박스 division 종료 -->
 		
 		<div class="left-text-box"><br>
 			<button class="pick-button" 
-				onclick="turnThisOff()"
-				onclick="turnNextOn()">
+      	id="R00"
+				onclick="buttonClicked(this.id)">
 				pick
 			</button>
 		</div>
 		<div class="right-text-box"><br>
 			<button class="pick-button" 
-				onclick="turnThisOff()"
-				onclick="turnNextOn()">
+	    	id="R01"
+				onclick="buttonClicked(this.id)">
 				pick
 			</button>
 		</div>
 	</div> 
-	<!-- contest 박스 종료 -->
 
 
 
 	<!-- 라운드 2 -->
-	<!-- 라운드 2 -->
-	<!-- 라운드 2 -->
-
   <!-- image 박스 둘 + text 박스 둘 -->
-  <div id="contest-block-2" style="display: none;">
-
+  <div id="bundle2">
   	<!-- 이미지 두개를 포함하는 이미지 박스 -->
 		<div class="img-box">
 			<!-- 왼쪽 이미지 박스 -->
 		    <div class="left-image-box">
 		    	<img
 	      	class="images"
-	      	src="./img/Blackpink/Rose/R03.jpg"
+	      	src="./img/Blackpink/Rose/R02.jpg"
 		    	width="300px"
 	      	onmouseenter="zoomIn(event)"
 	      	onmouseleave="zoomOut(event)"
-	      	onclick="doImgPop('img/Blackpink/Rose/R03.jpg')"
+	      	onclick="doImgPop('img/Blackpink/Rose/R02.jpg')"
 	      	/>
 		    </div>
 		    <!-- 오른쪽 이미지 박스 -->
 		    <div class="right-image-box">
 		    	<img
 		    	class="images"
-		    	src="./img/Blackpink/Rose/R04.jpg"
+		    	src="./img/Blackpink/Rose/R03.jpg"
 		    	width="300px"
 					onmouseenter="zoomIn(event)"
 		  		onmouseleave="zoomOut(event)"
-					onclick="doImgPop('img/Blackpink/Rose/R04.jpg')"
+					onclick="doImgPop('img/Blackpink/Rose/R03.jpg')"
 		  		/>
 			</div>
 		</div> <!-- 이미지 박스 division 종료 -->
 		
 		<div class="left-text-box"><br>
 			<button class="pick-button" 
-				onclick="turnThisOff2()"
-				onclick="turnNextOn2()">
+      	id="R02"
+				onclick="buttonClicked(this.id)">
 				pick
 			</button>
 		</div>
 		<div class="right-text-box"><br>
 			<button class="pick-button" 
-				onclick="turnThisOff2()"
-				onclick="turnNextOn2()">
+		    id="R03"
+				onclick="buttonClicked(this.id)">
 				pick
 			</button>
 		</div>
-	</div> <!-- contest 박스 종료 -->
+	</div>
 
 
+<!-- 라운드 3 -->
+  <!-- image 박스 둘 + text 박스 둘 -->
+  <div id="bundle3">
+  	<!-- 이미지 두개를 포함하는 이미지 박스 -->
+		<div class="img-box">
+			<!-- 왼쪽 이미지 박스 -->
+		    <div class="left-image-box">
+		    	<img
+	      	class="images"
+	      	src="./img/Blackpink/Rose/R04.jpg"
+		    	width="300px"
+	      	onmouseenter="zoomIn(event)"
+	      	onmouseleave="zoomOut(event)"
+	      	onclick="doImgPop('img/Blackpink/Rose/R04.jpg')"
+	      	/>
+		    </div>
+		    <!-- 오른쪽 이미지 박스 -->
+		    <div class="right-image-box">
+		    	<img
+		    	class="images"
+		    	src="./img/Blackpink/Rose/R05.jpg"
+		    	width="300px"
+					onmouseenter="zoomIn(event)"
+		  		onmouseleave="zoomOut(event)"
+					onclick="doImgPop('img/Blackpink/Rose/R05.jpg')"
+		  		/>
+			</div>
+		</div> <!-- 이미지 박스 division 종료 -->
+		
+		<div class="left-text-box"><br>
+			<button class="pick-button" 
+      	id="R04"
+				onclick="buttonClicked(this.id)">
+				pick
+			</button>
+		</div>
+		<div class="right-text-box"><br>
+			<button class="pick-button" 
+		    id="R05"
+				onclick="buttonClicked(this.id)">
+				pick
+			</button>
+		</div>
+	</div>
+
+
+
+<!-- 라운드 4 -->
+  <!-- image 박스 둘 + text 박스 둘 -->
+  <div id="bundle4">
+  	<!-- 이미지 두개를 포함하는 이미지 박스 -->
+		<div class="img-box">
+			<!-- 왼쪽 이미지 박스 -->
+		    <div class="left-image-box">
+		    	<img
+	      	class="images"
+	      	src="./img/Blackpink/Rose/R06.jpg"
+		    	width="300px"
+	      	onmouseenter="zoomIn(event)"
+	      	onmouseleave="zoomOut(event)"
+	      	onclick="doImgPop('img/Blackpink/Rose/R06.jpg')"
+	      	/>
+		    </div>
+		    <!-- 오른쪽 이미지 박스 -->
+		    <div class="right-image-box">
+		    	<img
+		    	class="images"
+		    	src="./img/Blackpink/Rose/R07.jpg"
+		    	width="300px"
+					onmouseenter="zoomIn(event)"
+		  		onmouseleave="zoomOut(event)"
+					onclick="doImgPop('img/Blackpink/Rose/R07.jpg')"
+		  		/>
+			</div>
+		</div> <!-- 이미지 박스 division 종료 -->
+		
+		<div class="left-text-box"><br>
+			<button class="pick-button" 
+      	id="R06"
+				onclick="buttonClicked(this.id)">
+				pick
+			</button>
+		</div>
+		<div class="right-text-box"><br>
+			<button class="pick-button" 
+		    id="R07"
+				onclick="buttonClicked(this.id)">
+				pick
+			</button>
+		</div>
+	</div>
 
 
   <script>
-  	// 보기 숨김 전환
-     function turnThisOff() {
-       var x = document.getElementById("contest-block-1");
-         x.style.display = "none";
-       var z = document.getElementById("contest-block-2");
-         z.style.display = "";
-     	}
+  	function buttonClicked(clicked_id) {
+		// <아이디에서 번호 부분만 추출>
+		// 기본작업 - 영문삭제 : R32 -> 32
+		var imgNum=clicked_id.substring(1,);
 
-     function turnNextOn() {
-       var y = document.getElementById("contest-block-2");
-         y.style.display = "none";
-     	}
+		// 추가작업 - 앞 0삭제 : 01 -> 1 (해당하는 경우만)
+			if(imgNum.substring(0,1)==0){
+				imgNum = imgNum.substring(1);
+			}
+		// bundle number과 비교하기 위해 imgNum/2
+		var k = parseInt(imgNum/2);
+		// 이제 bundle 에서 turn on/off 를 해야 한다...
+			if(k===B1){ 				// 1번 번들 - idx:0
+	    	var x = document.getElementById("bundle1"); x.style.display = "none";
+	    	var y = document.getElementById("bundle2"); y.style.display = "block";
+			} else if(k===B2){  // 2번 번들 - idx:1
+	    	var x = document.getElementById("bundle2"); x.style.display = "none";
+	    	var y = document.getElementById("bundle3"); y.style.display = "block";
+			}	else if(k===B3){ // 3번 번들 - idx:2
+	    	var x = document.getElementById("bundle3"); x.style.display = "none";
+	    	var y = document.getElementById("bundle4"); y.style.display = "block";	
+			} else if(k===B4){ // 4번 번들 - idx:3
+	    	var x = document.getElementById("bundle4"); x.style.display = "none";	
+			}
+		}		
+	</script>
+
+	<script>
+	window.onload = function () {
+		// html 문서 시작하자마자 bundle 객체를 모두 받아놔야겠음
+		// bundle 객체를 모두 받아 놓고 비교가 가능하게끔 함.
+		var b1 = document.getElementById( 'bundle1' ).getAttribute( 'id' );		B1=b1.substring(6,)-1;	//2
+		var b2 = document.getElementById( 'bundle2' ).getAttribute( 'id' ); 	B2=b2.substring(6,)-1;	//4
+		var b3 = document.getElementById( 'bundle3' ).getAttribute( 'id' ); 	B3=b3.substring(6,)-1;	//6
+		var b4 = document.getElementById( 'bundle4' ).getAttribute( 'id' ); 	B4=b4.substring(6,)-1;	//8
+	}
   </script>
 
 
 
 
-
-  <script>
-  	// 보기 숨김 전환
-     function turnThisOff2() {
-       var x = document.getElementById("contest-block-2");
-         x.style.display = "none";
-     	}
-
-     function turnNextOn2() {
-       var y = document.getElementById("contest-block-2");
-         y.style.display = "none";
-     	}
-  </script>
-
-<!-- 
-  <script>
-     function myFunction() {
-       var x = document.getElementById("contest-block-1st");
-       if (x.style.display === "none") {
-         x.style.display = "block";
-       } else {
-         x.style.display = "none";
-       }
-     }
-  </script>
- -->
 
 </body>
 </html>
