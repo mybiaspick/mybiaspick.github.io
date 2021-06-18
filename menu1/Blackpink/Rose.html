@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	  <link rel="stylesheet" type="text/css" href="../../code_CSS/mybiaspick.css">
+
+	<script>
+	// 미리 로딩해 둘 이미지 이름 배열
+
+	var files = ["../../img/Blackpink/Rose/R01.jpg",	  
+           		 "../../img/Blackpink/Rose/R02.jpg",
+           		 "../../img/Blackpink/Rose/R03.jpg",
+           		 "../../img/Blackpink/Rose/R04.jpg",
+	             "../../img/Blackpink/Rose/R05.jpg",
+	             "../../img/Blackpink/Rose/R06.jpg",
+	             "../../img/Blackpink/Rose/R07.jpg",
+	             "../../img/Blackpink/Rose/R08.jpg",
+	             "../../img/Blackpink/Rose/R09.jpg",
+	             "../../img/Blackpink/Rose/R10.jpeg",
+	             "../../img/Blackpink/Rose/R11.jpg",
+	             "../../img/Blackpink/Rose/R12.jpg",
+	             "../../img/Blackpink/Rose/R13.jpg",
+	             "../../img/Blackpink/Rose/R14.jpg",
+	             "../../img/Blackpink/Rose/R15.jpg",
+	             "../../img/Blackpink/Rose/R16.jpg",
+	             "../../img/Blackpink/Rose/R17.jpg",
+	             "../../img/Blackpink/Rose/R18.jpg",
+	             "../../img/Blackpink/Rose/R19.jpg",
+	             "../../img/Blackpink/Rose/R20.jpg",
+	             "../../img/Blackpink/Rose/R21.jpg",
+	             "../../img/Blackpink/Rose/R22.jpg",
+	             "../../img/Blackpink/Rose/R23.jpg",
+	             "../../img/Blackpink/Rose/R24.jpg",
+	             "../../img/Blackpink/Rose/R25.jpg",
+	             "../../img/Blackpink/Rose/R26.jpg",
+	             "../../img/Blackpink/Rose/R27.jpg",
+	             "../../img/Blackpink/Rose/R28.jpg",
+	             "../../img/Blackpink/Rose/R29.jpg",
+	             "../../img/Blackpink/Rose/R30.jpg",
+	             "../../img/Blackpink/Rose/R31.jpg",
+	             "../../img/Blackpink/Rose/R32.jpg",
+	             "../../img/Blackpink/Rose/R33.jpg",
+	             "../../img/Blackpink/Rose/R34.jpg",
+	             "../../img/Blackpink/Rose/R35.jpg",
+	             "../../img/Blackpink/Rose/R36.jpg",
+	             "../../img/Blackpink/Rose/R37.jpg",
+	             "../../img/Blackpink/Rose/R38.jpg",
+	             "../../img/Blackpink/Rose/R39.jpg",
+	             "../../img/Blackpink/Rose/R40.jpg",
+	             "../../img/Blackpink/Rose/R41.jpg",
+	             "../../img/Blackpink/Rose/R42.jpg",
+	             "../../img/Blackpink/Rose/R43.jpg",
+	             "../../img/Blackpink/Rose/R44.jpg",
+	             "../../img/Blackpink/Rose/R45.jpg",
+	             "../../img/Blackpink/Rose/R46.jpg",
+	             "../../img/Blackpink/Rose/R47.jpg",
+	             "../../img/Blackpink/Rose/R48.jpg",
+	             "../../img/Blackpink/Rose/R49.jpg",
+	             "../../img/Blackpink/Rose/R50.jpg",];
+	var imgs = new Array();
+	for(var i=0; i<files.length; i++) {
+		imgs[i] = new Image(); // 이미지 객체 생성
+		imgs[i].src = files[i]; // 이미지 미리 로딩
+	}
+	// 다음 이미지 출력
+	var next = 1;
+	function change(img) {
+		img.src = imgs[next].src; // 이미지 변경
+		next++; // 다음 이미지 인덱스
+		next %= imgs.length; // 개수를 넘으면 처음으로
+	}
+	</script>
+
+</head>
+<body class="center">
+  <br> 
+  <h1>
+  <a href="../../index.html"> 최애픽</a></h1>
+  <a href="../../menu1.html"> GALLERY</a> <br> 
+  <a href="../../menu2.html"> CONTEST</a><br> 
+  <br>
+	<!-- new Image()로 이미지 로딩 -->
+	<hr>
+	이미지를 클릭하면 다음 이미지를 보여줍니다.<br>
+	<br>(가로 300px 고정)<br><br>
+
+	<img style="border:20px ridge wheat"
+		src="../../img/Blackpink/Rose/R00.jpg" alt="Rose"
+		width="300" 
+		onclick="change(this)">
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	  <link rel="stylesheet" type="text/css" href="../../code_CSS/mybiaspick.css">
+
+	<script>
+	// 미리 로딩해 둘 이미지 이름 배열
+
+var files = ["../../img/Blackpink/Jisoo/J001.jpg",	  
+           		 "../../img/Blackpink/Jisoo/J002.jpg",
+           		 "../../img/Blackpink/Jisoo/J003.jpg",
+           		 "../../img/Blackpink/Jisoo/J004.jpg",
+	             "../../img/Blackpink/Jisoo/J005.jpg",
+	             "../../img/Blackpink/Jisoo/J006.jpg",
+	             "../../img/Blackpink/Jisoo/J007.jpg",
+	             "../../img/Blackpink/Jisoo/J008.jpg",
+	             "../../img/Blackpink/Jisoo/J009.jpg",
+	             "../../img/Blackpink/Jisoo/J010.jpg",
+	             "../../img/Blackpink/Jisoo/J011.jpg",
+	             "../../img/Blackpink/Jisoo/J012.jpg",
+	             "../../img/Blackpink/Jisoo/J013.jpg",
+	             "../../img/Blackpink/Jisoo/J014.jpg",
+	             "../../img/Blackpink/Jisoo/J015.jpg",
+	             "../../img/Blackpink/Jisoo/J016.jpg",
+	             "../../img/Blackpink/Jisoo/J017.jpg",
+	             "../../img/Blackpink/Jisoo/J018.jpg",
+	             "../../img/Blackpink/Jisoo/J019.jpg",
+	             "../../img/Blackpink/Jisoo/J020.jpg",
+	             "../../img/Blackpink/Jisoo/J021.jpg",
+	             "../../img/Blackpink/Jisoo/J022.jpg",
+	             "../../img/Blackpink/Jisoo/J023.jpg",
+	             "../../img/Blackpink/Jisoo/J024.jpg",
+	             "../../img/Blackpink/Jisoo/J025.jpg",
+	             "../../img/Blackpink/Jisoo/J026.jpg",
+	             "../../img/Blackpink/Jisoo/J027.jpg",
+	             "../../img/Blackpink/Jisoo/J028.jpg",
+	             "../../img/Blackpink/Jisoo/J029.jpg",
+	             "../../img/Blackpink/Jisoo/J030.jpg",
+	             "../../img/Blackpink/Jisoo/J031.jpg",
+	             "../../img/Blackpink/Jisoo/J032.jpg",
+	             "../../img/Blackpink/Jisoo/J033.jpg",
+	             "../../img/Blackpink/Jisoo/J034.jpg",
+	             "../../img/Blackpink/Jisoo/J035.jpg",
+	             "../../img/Blackpink/Jisoo/J036.jpg",
+	             "../../img/Blackpink/Jisoo/J037.jpg",
+	             "../../img/Blackpink/Jisoo/J038.jpg",
+	             "../../img/Blackpink/Jisoo/J039.jpg",
+	             "../../img/Blackpink/Jisoo/J040.jpg",
+	             "../../img/Blackpink/Jisoo/J041.jpg",
+	             "../../img/Blackpink/Jisoo/J042.jpg",
+	             "../../img/Blackpink/Jisoo/J043.jpg",
+	             "../../img/Blackpink/Jisoo/J044.jpg",
+	             "../../img/Blackpink/Jisoo/J045.jpg",
+	             "../../img/Blackpink/Jisoo/J046.jpg",
+	             "../../img/Blackpink/Jisoo/J047.jpg",
+	             "../../img/Blackpink/Jisoo/J048.jpg",
+	             "../../img/Blackpink/Jisoo/J049.jpg",
+	             "../../img/Blackpink/Jisoo/J050.jpg",];
+	var imgs = new Array();
+	for(var i=0; i<files.length; i++) {
+		imgs[i] = new Image(); // 이미지 객체 생성
+		imgs[i].src = files[i]; // 이미지 미리 로딩
+	}
+	// 다음 이미지 출력
+	var next = 1;
+	function change(img) {
+		img.src = imgs[next].src; // 이미지 변경
+		next++; // 다음 이미지 인덱스
+		next %= imgs.length; // 개수를 넘으면 처음으로
+	}
+	</script>
+
+</head>
+<body class="center">
+  <br> 
+  <h1>
+  <a href="../../index.html"> 최애픽</a></h1>
+  <a href="../../menu1.html"> GALLERY</a> <br> 
+  <a href="../../menu2.html"> CONTEST</a><br> 
+  <br>
+	<!-- new Image()로 이미지 로딩 -->
+	<hr>
+	이미지를 클릭하면 다음 이미지를 보여줍니다.<br>
+	<br>(가로 300px 고정)<br><br>
+
+	<img style="border:20px ridge wheat"
+		src="../../img/Blackpink/Jisoo/J001.jpg" alt="Jisoo"
+		width="300" 
+		onclick="change(this)">
+</body>
+</html>

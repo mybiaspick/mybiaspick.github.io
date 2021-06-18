@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	  <link rel="stylesheet" type="text/css" href="../../code_CSS/mybiaspick.css">
+
+	<script>
+	// 미리 로딩해 둘 이미지 이름 배열
+
+var files = ["../../img/Blackpink/jennie/J001.jpg",	  
+           		 "../../img/Blackpink/jennie/J002.jpg",
+           		 "../../img/Blackpink/jennie/J003.jpg",
+           		 "../../img/Blackpink/jennie/J004.jpg",
+	             "../../img/Blackpink/jennie/J005.jpg",
+	             "../../img/Blackpink/jennie/J006.jpg",
+	             "../../img/Blackpink/jennie/J007.jpg",
+	             "../../img/Blackpink/jennie/J008.jpg",
+	             "../../img/Blackpink/jennie/J009.jpg",
+	             "../../img/Blackpink/jennie/J010.jpg",
+	             "../../img/Blackpink/jennie/J011.jpg",
+	             "../../img/Blackpink/jennie/J012.jpg",
+	             "../../img/Blackpink/jennie/J013.jpg",
+	             "../../img/Blackpink/jennie/J014.jpg",
+	             "../../img/Blackpink/jennie/J015.jpg",
+	             "../../img/Blackpink/jennie/J016.jpg",
+	             "../../img/Blackpink/jennie/J017.jpg",
+	             "../../img/Blackpink/jennie/J018.jpg",
+	             "../../img/Blackpink/jennie/J019.jpg",
+	             "../../img/Blackpink/jennie/J020.jpg",
+	             "../../img/Blackpink/jennie/J021.jpg",
+	             "../../img/Blackpink/jennie/J022.jpg",
+	             "../../img/Blackpink/jennie/J023.jpg",
+	             "../../img/Blackpink/jennie/J024.jpg",
+	             "../../img/Blackpink/jennie/J025.jpg",
+	             "../../img/Blackpink/jennie/J026.jpg",
+	             "../../img/Blackpink/jennie/J027.jpg",
+	             "../../img/Blackpink/jennie/J028.jpg",
+	             "../../img/Blackpink/jennie/J029.jpg",
+	             "../../img/Blackpink/jennie/J030.jpg",
+	             "../../img/Blackpink/jennie/J031.jpg",
+	             "../../img/Blackpink/jennie/J032.jpg",
+	             "../../img/Blackpink/jennie/J033.jpg",
+	             "../../img/Blackpink/jennie/J034.jpg",
+	             "../../img/Blackpink/jennie/J035.jpg",
+	             "../../img/Blackpink/jennie/J036.jpg",
+	             "../../img/Blackpink/jennie/J037.jpg",
+	             "../../img/Blackpink/jennie/J038.jpg",
+	             "../../img/Blackpink/jennie/J039.jpg",
+	             "../../img/Blackpink/jennie/J040.jpg",
+	             "../../img/Blackpink/jennie/J041.jpg",
+	             "../../img/Blackpink/jennie/J042.jpg",
+	             "../../img/Blackpink/jennie/J043.jpg",
+	             "../../img/Blackpink/jennie/J044.jpg",
+	             "../../img/Blackpink/jennie/J045.jpg",
+	             "../../img/Blackpink/jennie/J046.jpg",
+	             "../../img/Blackpink/jennie/J047.jpg",
+	             "../../img/Blackpink/jennie/J048.jpg",
+	             "../../img/Blackpink/jennie/J049.jpg",
+	             "../../img/Blackpink/jennie/J050.jpg",];
+	var imgs = new Array();
+	for(var i=0; i<files.length; i++) {
+		imgs[i] = new Image(); // 이미지 객체 생성
+		imgs[i].src = files[i]; // 이미지 미리 로딩
+	}
+	// 다음 이미지 출력
+	var next = 1;
+	function change(img) {
+		img.src = imgs[next].src; // 이미지 변경
+		next++; // 다음 이미지 인덱스
+		next %= imgs.length; // 개수를 넘으면 처음으로
+	}
+	</script>
+
+</head>
+<body class="center">
+  <br> 
+  <h1>
+  <a href="../../index.html"> 최애픽</a></h1>
+  <a href="../../menu1.html"> GALLERY</a> <br> 
+  <a href="../../menu2.html"> CONTEST</a><br> 
+  <br>
+	<!-- new Image()로 이미지 로딩 -->
+	<hr>
+	이미지를 클릭하면 다음 이미지를 보여줍니다.<br>
+	<br>(가로 300px 고정)<br><br>
+
+	<img style="border:20px ridge wheat"
+		src="../../img/Blackpink/jennie/J001.jpg" alt="jennie"
+		width="300" 
+		onclick="change(this)">
+</body>
+</html>

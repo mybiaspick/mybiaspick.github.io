@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> MY BIAS PICK</title>
+	  <link rel="stylesheet" type="text/css" href="../../code_CSS/mybiaspick.css">
+
+	<script>
+	// 미리 로딩해 둘 이미지 이름 배열
+
+var files = ["../../img/Blackpink/Lisa/L001.jpg",	  
+           		 "../../img/Blackpink/Lisa/L002.jpg",
+           		 "../../img/Blackpink/Lisa/L003.jpg",
+           		 "../../img/Blackpink/Lisa/L004.jpg",
+	             "../../img/Blackpink/Lisa/L005.jpg",
+	             "../../img/Blackpink/Lisa/L006.jpg",
+	             "../../img/Blackpink/Lisa/L007.jpg",
+	             "../../img/Blackpink/Lisa/L008.jpg",
+	             "../../img/Blackpink/Lisa/L009.jpg",
+	             "../../img/Blackpink/Lisa/L010.jpg",
+	             "../../img/Blackpink/Lisa/L011.jpg",
+	             "../../img/Blackpink/Lisa/L012.jpg",
+	             "../../img/Blackpink/Lisa/L013.jpg",
+	             "../../img/Blackpink/Lisa/L014.jpg",
+	             "../../img/Blackpink/Lisa/L015.jpg",
+	             "../../img/Blackpink/Lisa/L016.jpg",
+	             "../../img/Blackpink/Lisa/L017.jpg",
+	             "../../img/Blackpink/Lisa/L018.jpg",
+	             "../../img/Blackpink/Lisa/L019.jpg",
+	             "../../img/Blackpink/Lisa/L020.jpg",
+	             "../../img/Blackpink/Lisa/L021.jpg",
+	             "../../img/Blackpink/Lisa/L022.jpg",
+	             "../../img/Blackpink/Lisa/L023.jpg",
+	             "../../img/Blackpink/Lisa/L024.jpg",
+	             "../../img/Blackpink/Lisa/L025.jpg",
+	             "../../img/Blackpink/Lisa/L026.jpg",
+	             "../../img/Blackpink/Lisa/L027.jpg",
+	             "../../img/Blackpink/Lisa/L028.jpg",
+	             "../../img/Blackpink/Lisa/L029.jpg",
+	             "../../img/Blackpink/Lisa/L030.jpg",
+	             "../../img/Blackpink/Lisa/L031.jpg",
+	             "../../img/Blackpink/Lisa/L032.jpg",
+	             "../../img/Blackpink/Lisa/L033.jpg",
+	             "../../img/Blackpink/Lisa/L034.jpg",
+	             "../../img/Blackpink/Lisa/L035.jpg",
+	             "../../img/Blackpink/Lisa/L036.jpg",
+	             "../../img/Blackpink/Lisa/L037.jpg",
+	             "../../img/Blackpink/Lisa/L038.jpg",
+	             "../../img/Blackpink/Lisa/L039.jpg",
+	             "../../img/Blackpink/Lisa/L040.jpg",
+	             "../../img/Blackpink/Lisa/L041.jpg",
+	             "../../img/Blackpink/Lisa/L042.jpg",
+	             "../../img/Blackpink/Lisa/L043.jpg",
+	             "../../img/Blackpink/Lisa/L044.jpg",
+	             "../../img/Blackpink/Lisa/L045.jpg",
+	             "../../img/Blackpink/Lisa/L046.jpg",
+	             "../../img/Blackpink/Lisa/L047.jpg",
+	             "../../img/Blackpink/Lisa/L048.jpg",
+	             "../../img/Blackpink/Lisa/L049.jpg",
+	             "../../img/Blackpink/Lisa/L050.jpg",];
+	var imgs = new Array();
+	for(var i=0; i<files.length; i++) {
+		imgs[i] = new Image(); // 이미지 객체 생성
+		imgs[i].src = files[i]; // 이미지 미리 로딩
+	}
+	// 다음 이미지 출력
+	var next = 1;
+	function change(img) {
+		img.src = imgs[next].src; // 이미지 변경
+		next++; // 다음 이미지 인덱스
+		next %= imgs.length; // 개수를 넘으면 처음으로
+	}
+	</script>
+
+</head>
+<body class="center">
+  <br> 
+  <h1>
+  <a href="../../index.html"> 최애픽</a></h1>
+  <a href="../../menu1.html"> GALLERY</a> <br> 
+  <a href="../../menu2.html"> CONTEST</a><br> 
+  <br>
+	<!-- new Image()로 이미지 로딩 -->
+	<hr>
+	이미지를 클릭하면 다음 이미지를 보여줍니다.<br>
+	<br>(가로 300px 고정)<br><br>
+
+	<img style="border:20px ridge wheat"
+		src="../../img/Blackpink/Lisa/L001.jpg" alt="Lisa"
+		width="300" 
+		onclick="change(this)">
+</body>
+</html>
